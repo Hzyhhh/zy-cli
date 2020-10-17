@@ -4,6 +4,9 @@
   "author": "hzyhhh1996",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/Hzyhhh/zy-cli"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public"

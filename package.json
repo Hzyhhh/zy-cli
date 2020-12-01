@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "author": "hzyhhh1996",
   "description": "",
-  "main": "index.js",
+  "main": "bin/index.js",
   "repository": {
     "url": "https://github.com/Hzyhhh/zy-cli"
   },
@@ -12,12 +12,22 @@
     "access": "public"
   },
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "zy"
   },
-  "license": "ISC",
+  "license": "MIT",
   "bin": {
-    "zy": "./bin/index.ts"
+    "zy": "bin/index.ts"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "devDependencies": {
+    "pretty-quick": "^3.1.0",
+    "ts-node": "^9.0.0"
   },
   "dependencies": {
     "@types/node": "^14.6.4",

@@ -5,7 +5,7 @@
     "target": "es5",
     "sourceMap": false,
     "outDir": "dist",
-    "allowJs": false,
+    "allowJs": true,
     "declaration": true,
     "moduleResolution": "node",
     "importHelpers": false,
@@ -24,5 +24,5 @@
     "baseUrl": ".",
     "typeRoots": ["types", "node_modules/@types"]
   },
-  "exclude": ["node_modules", "template", "bin"]
+  "exclude": ["node_modules", "dist", "template", "bin"]
 }

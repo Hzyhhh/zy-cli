@@ -1,6 +1,8 @@
 import commander from "commander";
+import create from "./cmds/create";
+const appInfo = require("../package.json");
 
-commander.version("0.0.1").description("zy-cli");
+commander.version(appInfo.version).description(appInfo.name);
 
 commander
   .option("-p, --peppers", "Add peppers")
@@ -15,5 +17,7 @@ commander
     console.log("Example call:");
     console.log("  $ custom-help --help");
   });
+
+commander.command("init <projectName>").action(create);
 
 commander.parse(process.argv);

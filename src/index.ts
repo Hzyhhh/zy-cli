@@ -18,6 +18,6 @@ commander
     console.log("  $ custom-help --help");
   });
 
-commander.command("init <projectName>").action(create);
+commander.command("create <projectName>").action(create);
 
 commander.parse(process.argv);
